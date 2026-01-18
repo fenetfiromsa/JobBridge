@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBridge - Messages</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+
+</head>
+<body>
+  <header>
+        <nav>
+            <a href="index.html" class="logo">JobBridge</a>
+            <div class="hamburger">&#9776;</div>
+            <!-- Navigation menu -->
+
+            <ul class="nav-links">
+            
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <button><li><a href="login.html">Login</a></li></button>
+                <button><li><a href="signup.html">Signup</a></li></button>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="page-container">
+        <h1 class="page-title">Messages</h1>
+
+        <section class="messages-page">
+            <!-- Chat list -->
+            <div class="chat-list">
+                <div class="chat-header">
+                    <h2>Conversations</h2>
+                    <span id="connection-count" class="connection-count">0 connections</span>
+                </div>
+                
+                <ul id="chat-list-users" class="chat-users">
+                    <!-- Connected users will be loaded here  -->
+                    <li class="no-chats">
+                        <div class="empty-chat-state">
+                            <p>No connections yet</p>
+                            <p class="small-text">Connect with people in the Network page to start chatting</p>
+                            <a href="network.html" class="cta-btn-small">Go to Network</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chat window -->
+            <div class="chat-window">
+                <div class="chat-header">
+                    <h2 id="chat-title">Select a conversation</h2>
+                    <div id="chat-user-info" class="chat-user-info" style="display: none;">
+                        <span id="chat-user-title" class="chat-user-title"></span>
+                        <span id="chat-user-location" class="chat-user-location"></span>
+                    </div>
+                </div>
+
+                <div class="messages-container">
+                    <div class="messages" id="chat-messages">
+                        <div class="welcome-message">
+                            <h3>Welcome to Messages</h3>
+                            <p>Select a conversation from the list to start chatting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-input-container">
+                    <div class="message-input">
+                        <input type="text" id="message-input" placeholder="Type a message..." disabled>
+                        <button id="send-btn" disabled>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="input-hint" id="input-hint">Select a conversation to enable messaging</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 JobBridge. All rights reserved.</p>
+    </footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

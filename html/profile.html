@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerLink - Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="../html/index.html" class="logo">CareerLink</a>
+            <div class="hamburger">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="signup.html" class="btn-signup">Signup</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page container">
+        <h1 class="profile-title">User Profile</h1>
+
+        <!-- profile info -->
+        <div class="profile-top">
+            <section class="profile-info card">
+                <h2>Information</h2>
+                <img src="../assets/default-profile.jpg" alt="Profile Picture" class="profile-img" id="dynamic-profile-img">
+                <p class="profile-name" id="dynamic-name">Loading...</p>
+                <p class="profile-email" id="dynamic-email">Loading...</p>
+                <p class="profile-location" id="dynamic-location">Loading...</p>
+                
+                <!-- Profile image upload -->
+                <div class="image-upload-container">
+                    <input type="file" id="profile-image-input" accept="image/*" style="display: none;">
+                    <button type="button" id="upload-image-btn" class="upload-btn">Change Profile Picture</button>
+                    <p class="upload-note">Max size: 2MB. Formats: JPG, PNG</p>
+                </div>
+            </section>
+
+            <section class="profile-about card modern-card">
+                <div class="card-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-content" id="dynamic-about">
+                    <p>Loading user information...</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Skills, Experience, Education, Contact -->
+        <div class="profile-bottom">
+            <section class="profile-skills card">
+                <h2>Skills</h2>
+                <ul class="skills-list" id="dynamic-skills">
+                    <li>No skills added yet</li>
+                </ul>
+            </section>
+
+            <section class="profile-experience card">
+                <h2>Experience</h2>
+                <ul class="experience-list" id="dynamic-experience">
+                    <li>No experience added yet</li>
+                </ul>
+            </section>
+
+            <section class="profile-education card">
+                <h2>Education</h2>
+                <ul class="education-list" id="dynamic-education">
+                    <li>No education added yet</li>
+                </ul>
+            </section>
+
+            <section class="profile-contact card">
+                <h2>Contact Information</h2>
+                <ul class="contact-list" id="dynamic-contact">
+                    <li>No contact information added yet</li>
+                </ul>
+            </section>
+
+            <!-- Job Recommendations in Profile -->
+<section class="profile-recommendations card">
+    <h2>Job Recommendations</h2>
+    <div id="profile-recommended-jobs">
+        <p>Add your education information to get personalized job recommendations!</p>
+    </div>
+    <div class="education-tip">
+        <p><strong>Tip:</strong> The more detailed your education information, the better our recommendations will be.</p>
+    </div>
+</section>
+        </div>
+
+        <!-- edit profile -->
+        <section class="profile-edit card">
+            <h2>Edit Profile</h2>
+            <form class="edit-form" id="profile-edit-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edit-name">Full Name:</label>
+                        <input type="text" id="edit-name" placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-location">Location:</label>
+                        <input type="text" id="edit-location" placeholder="City, Country">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edit-phone">Phone Number:</label>
+                        <input type="tel" id="edit-phone" placeholder="+1234567890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-email">Email:</label>
+                        <input type="email" id="edit-email" placeholder="your.email@example.com">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-linkedin">LinkedIn Profile:</label>
+                    <input type="url" id="edit-linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-portfolio">Portfolio Website:</label>
+                    <input type="url" id="edit-portfolio" placeholder="https://yourportfolio.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-skills">Skills (separate with commas):</label>
+                    <input type="text" id="edit-skills" placeholder="e.g., HTML, CSS, JavaScript, React">
+                    <small class="form-hint">Separate multiple skills with commas</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-experience">Add Experience:</label>
+                    <textarea id="edit-experience" placeholder="e.g., Frontend Developer at TechNova Solutions (2023-Present) - Built responsive web applications" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-education">Add Education:</label>
+                    <textarea id="edit-education" placeholder="e.g., BSc in Computer Science at University (2020-2024)" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-about">About Me:</label>
+                    <textarea id="edit-about" placeholder="Tell us about yourself, your career goals, and interests..." rows="5"></textarea>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                    <button type="reset" class="cancel-btn">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 JobBridge. All rights reserved.</p>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+    <script>
+        // Profile-specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Profile image upload
+            const uploadBtn = document.getElementById('upload-image-btn');
+            const imageInput = document.getElementById('profile-image-input');
+            
+            if (uploadBtn && imageInput) {
+                uploadBtn.addEventListener('click', function() {
+                    imageInput.click();
+                });
+                
+                imageInput.addEventListener('change', function(e) {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    
+                    // Check file size (max 2MB)
+                    if (file.size > 2 * 1024 * 1024) {
+                        alert('File size too large! Maximum size is 2MB.');
+                        return;
+                    }
+                    
+                    // Check file type
+                    const validTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+                    if (!validTypes.includes(file.type)) {
+                        alert('Invalid file type! Please upload JPG or PNG images.');
+                        return;
+                    }
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        // Update image display
+                        const profileImg = document.getElementById('dynamic-profile-img');
+                        if (profileImg) {
+                            profileImg.src = e.target.result;
+                        }
+                        
+                        // Save to user data
+                        const user = JSON.parse(localStorage.getItem('currentUser'));
+                        if (user) {
+                            user.profileImage = e.target.result;
+                            localStorage.setItem('currentUser', JSON.stringify(user));
+                            
+                            // Also update in demo users if it's a demo user
+                            const demoUsers = JSON.parse(localStorage.getItem('demoUsers')) || {};
+                            if (demoUsers[user.email]) {
+                                demoUsers[user.email].profileImage = e.target.result;
+                                localStorage.setItem('demoUsers', JSON.stringify(demoUsers));
+                            }
+                            
+                            alert('Profile picture updated successfully!');
+                        }
+                    };
+                    
+                    reader.readAsDataURL(file);
+                });
+            }
+            
+            // Load current user data into form
+            function loadUserDataToForm() {
+                const user = JSON.parse(localStorage.getItem('currentUser'));
+                if (!user) {
+                    // If no user is logged in, redirect to login
+                    window.location.href = 'login.html';
+                    return;
+                }
+                
+                // Update form fields
+                const formFields = {
+                    'edit-name': user.name || '',
+                    'edit-location': user.location || '',
+                    'edit-phone': user.phone || '',
+                    'edit-email': user.email || '',
+                    'edit-linkedin': user.linkedin || '',
+                    'edit-portfolio': user.portfolio || '',
+                    'edit-about': user.about || '',
+                    'edit-skills': user.skills ? user.skills.join(', ') : ''
+                };
+                
+                Object.entries(formFields).forEach(([fieldId, value]) => {
+                    const field = document.getElementById(fieldId);
+                    if (field) field.value = value;
+                });
+            }
+            
+            // Handle form submission
+            const editForm = document.getElementById('profile-edit-form');
+            if (editForm) {
+                editForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const user = JSON.parse(localStorage.getItem('currentUser'));
+                    if (!user) {
+                        alert('Please login to edit your profile');
+                        window.location.href = 'login.html';
+                        return;
+                    }
+                    
+                    // Collect form data
+                    const formData = {
+                        name: document.getElementById('edit-name').value.trim(),
+                        location: document.getElementById('edit-location').value.trim(),
+                        phone: document.getElementById('edit-phone').value.trim(),
+                        email: document.getElementById('edit-email').value.trim(),
+                        linkedin: document.getElementById('edit-linkedin').value.trim(),
+                        portfolio: document.getElementById('edit-portfolio').value.trim(),
+                        about: document.getElementById('edit-about').value.trim()
+                    };
+                    
+                    // Handle skills 
+                    const skillsInput = document.getElementById('edit-skills').value.trim();
+                    if (skillsInput) {
+                        const newSkills = skillsInput.split(',').map(skill => skill.trim()).filter(skill => skill);
+                        user.skills = [...new Set([...(user.skills || []), ...newSkills])];
+                    }
+                    
+                    // Handle experience
+                    const experienceInput = document.getElementById('edit-experience').value.trim();
+                    if (experienceInput) {
+                        if (!user.experience) user.experience = [];
+                        user.experience.push(experienceInput);
+                    }
+                    
+                    // Handle education
+                    const educationInput = document.getElementById('edit-education').value.trim();
+                    if (educationInput) {
+                        if (!user.education) user.education = [];
+                        user.education.push(educationInput);
+                    }
+                    
+                    // Update user object with form data
+                    Object.assign(user, formData);
+                    
+                    // Save updated user
+                    localStorage.setItem('currentUser', JSON.stringify(user));
+                    
+                    // Update in demo users if it's a demo user
+                    const demoUsers = JSON.parse(localStorage.getItem('demoUsers')) || {};
+                    if (demoUsers[user.email]) {
+                        Object.assign(demoUsers[user.email], user);
+                        localStorage.setItem('demoUsers', JSON.stringify(demoUsers));
+                    }
+                    
+                    // Show success message
+                    alert('Profile updated successfully!');
+                    
+                    // Clear the experience and education textareas
+                    document.getElementById('edit-experience').value = '';
+                    document.getElementById('edit-education').value = '';
+                    
+                    // Reload page to show updated data
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 500);
+                });
+                
+                // Handle form reset
+                editForm.addEventListener('reset', function() {
+                    setTimeout(loadUserDataToForm, 100);
+                });
+            }
+            
+            // Initialize form with user data
+            loadUserDataToForm();
+            
+            // Update page immediately with user data
+            updateProfileDisplay();
+            
+            function updateProfileDisplay() {
+                const user = JSON.parse(localStorage.getItem('currentUser'));
+                if (!user) return;
+                
+                // Update profile info
+                const updateElement = (id, text, fallback = 'Not specified') => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.textContent = text || fallback;
+                    }
+                };
+                
+                updateElement('dynamic-name', user.name, 'Your Name');
+                updateElement('dynamic-email', user.email, 'your.email@example.com');
+                updateElement('dynamic-location', user.location, 'Add your location');
+                
+                // Update profile image
+                const profileImg = document.getElementById('dynamic-profile-img');
+                if (profileImg && user.profileImage) {
+                    profileImg.src = user.profileImage;
+                }
+                
+                // Update About Me
+                const aboutContent = document.getElementById('dynamic-about');
+                if (aboutContent) {
+                    aboutContent.innerHTML = user.about ? 
+                        `<p>${user.about}</p>` : 
+                        '<p>No bio added yet. Tell us about yourself in the edit form below!</p>';
+                }
+                
+                // Update Skills
+                const skillsList = document.getElementById('dynamic-skills');
+                if (skillsList) {
+                    if (user.skills && user.skills.length > 0) {
+                        skillsList.innerHTML = user.skills.map(skill => `<li>${skill}</li>`).join('');
+                    }
+                }
+                
+                // Update Experience
+                const experienceList = document.getElementById('dynamic-experience');
+                if (experienceList) {
+                    if (user.experience && user.experience.length > 0) {
+                        experienceList.innerHTML = user.experience.map(exp => 
+                            `<li>${exp}</li>`
+                        ).join('');
+                    }
+                }
+                
+                // Update Education
+                const educationList = document.getElementById('dynamic-education');
+                if (educationList) {
+                    if (user.education && user.education.length > 0) {
+                        educationList.innerHTML = user.education.map(edu => 
+                            `<li>${edu}</li>`
+                        ).join('');
+                    }
+                }
+                
+                // Update Contact Info
+                const contactList = document.getElementById('dynamic-contact');
+                if (contactList) {
+                    let contactHTML = '';
+                    
+                    if (user.phone) {
+                        contactHTML += `<li><strong>Phone:</strong> ${user.phone}</li>`;
+                    }
+                    
+                    if (user.linkedin) {
+                        const linkedinUrl = user.linkedin.startsWith('http') ? user.linkedin : `https://${user.linkedin}`;
+                        contactHTML += `<li><strong>LinkedIn:</strong> <a href="${linkedinUrl}" target="_blank" rel="noopener">${user.linkedin}</a></li>`;
+                    }
+                    
+                    if (user.portfolio) {
+                        const portfolioUrl = user.portfolio.startsWith('http') ? user.portfolio : `https://${user.portfolio}`;
+                        contactHTML += `<li><strong>Portfolio:</strong> <a href="${portfolioUrl}" target="_blank" rel="noopener">${user.portfolio}</a></li>`;
+                    }
+                    
+                    if (user.email) {
+                        contactHTML += `<li><strong>Email:</strong> <a href="mailto:${user.email}">${user.email}</a></li>`;
+                    }
+                    
+                    contactList.innerHTML = contactHTML || '<li>No contact information added yet</li>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
