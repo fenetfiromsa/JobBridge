@@ -1,4 +1,4 @@
-                           # CareerLink — Job Networking & Career Management Web Application
+                           #  JobBridge— Job Networking & Career Management Web Application
 
         GROUP MEMBERS
 1.  Fenet Firomsa
@@ -9,14 +9,14 @@
  
 
 
-**CareerLink** is a multi-page web application designed to help users find jobs, manage their professional profiles, track applications, and network with other professionals. This version includes **full HTML structure**. CSS and JavaScript will be implemented in later stages to enhance UI and interactivity.
+**JobBridge** is a multi-page web application designed to help users find jobs, manage their professional profiles, track applications, and network with other professionals. This version includes **full HTML structure**. CSS and JavaScript will be implemented in later stages to enhance UI and interactivity.
 
 ---
 
 
 ## Overview
 
-CareerLink is a job networking and career management platform that allows users to:
+JobBridge is a job networking and career management platform that allows users to:
 
 - Create and manage personal profiles  
 - Explore and apply for jobs  
@@ -25,7 +25,7 @@ CareerLink is a job networking and career management platform that allows users 
 - Network with other professionals  
 - Send and receive messages  
 
-This version of CareerLink is built purely in HTML to establish the **page structure**. Future versions will include **CSS styling** and **JavaScript interactivity** for a dynamic user experience.
+This version of JobBridge is built purely in HTML to establish the **page structure**. Future versions will include **CSS styling** and **JavaScript interactivity** for a dynamic user experience.
 
 ---
 
@@ -76,8 +76,8 @@ User
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/fenetfiromsa/careerlink.git
 
+https://github.com/fenetfiromsa/JobBridge
 Open the index.html file in your browser to start exploring the app.
 
 ## Usage Guide
