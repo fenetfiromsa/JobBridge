@@ -101,8 +101,8 @@ job-bridge-platform/
 Local Development
 Clone the repository
 
-git clone https://github.com/yourusername/jobbridge.git
-cd jobbridge
+git clone https://github.com/fenetfiromsa/JobBridge
+cd JobBridge
 Open in browser
 Initialize demo data
 
