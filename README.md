@@ -3,10 +3,15 @@
 JobBridge is a comprehensive job networking platform that intelligently connects job seekers with employment opportunities based on their education, skills, and career goals. The platform combines modern web technologies with intelligent recommendation algorithms to provide personalized job suggestions and professional networking capabilities.
 
  📋 Group Members
+ 
      Fenet Firomsa
+     
      Fikerte Yimer
+     
      Fiker Robel
+     
      Hawi Sebsibe
+     
      Haleluya Desalegn
 
 
