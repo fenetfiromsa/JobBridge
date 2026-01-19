@@ -3,17 +3,20 @@ JobBridge - Intelligent Job Recommendation Platform
 JobBridge is a comprehensive job networking platform that intelligently connects job seekers with employment opportunities based on their education, skills, and career goals. The platform combines modern web technologies with intelligent recommendation algorithms to provide personalized job suggestions and professional networking capabilities.
 
 👥 Team Members
-Fenet Firomsa - Project Lead & Frontend Developer
 
-Fikerte Yimer - Backend Developer & System Architect
+Fenet Firomsa 
 
-Fiker Robel - UI/UX Designer & Frontend Developer
+Fikerte Yimer 
 
-Hawi Sebsibe - Data Analyst & Recommendation Specialist
+Fiker Robel
 
-Haleluya Desalegn - QA Engineer & Documentation Specialist
+Hawi Sebsibe
+
+Haleluya Desalegn
 
 ✨ Key Features
+
+
 🎯 Intelligent Job Recommendations
 Personalized job suggestions based on user's education background
 
@@ -22,6 +25,7 @@ Machine learning-based matching algorithm
 Real-time recommendation updates as users add more profile information
 
 🤝 Professional Networking
+
 Connect with professionals in your industry
 
 In-app messaging system for communication
@@ -29,6 +33,7 @@ In-app messaging system for communication
 Suggested connections based on similar profiles
 
 📋 Comprehensive Job Management
+
 Browse thousands of job listings
 
 Apply to jobs directly through the platform
@@ -38,6 +43,7 @@ Track application status in real-time
 Save favorite job listings
 
 👤 Smart User Profiles
+
 Dynamic profile creation and editing
 
 Skills and experience tracking
@@ -47,6 +53,7 @@ Education-based job recommendations
 Profile visibility controls
 
 🔒 Secure Authentication
+
 User registration and login system
 
 Password protection
@@ -56,6 +63,7 @@ Session management
 Demo accounts for testing
 
 🛠️ Technology Stack
+
 Frontend
 HTML5 - Semantic markup structure
 
@@ -80,7 +88,9 @@ Custom CSS Framework - Tailored styling system
 Responsive Navigation - Hamburger menu for mobile
 
 📁 Project Structure
-text
+
+
+
 JobBridge/
 │
 ├── index.html                 # Homepage with hero section
@@ -108,7 +118,10 @@ JobBridge/
 │   └── various icons/      # UI icons and illustrations
 │
 └── README.md                # Project documentation
+
+
 🚀 Core Functionality
+
 Authentication System
 Demo Accounts:
 
@@ -166,6 +179,7 @@ Track application status (Applied, Under Review, Interview, Rejected)
 View application history
 
 🎨 Design Philosophy
+
 Visual Design
 Color Scheme: Professional blues and gradients
 
@@ -176,6 +190,7 @@ Spacing: Consistent padding and margins
 Components: Modular card-based design
 
 User Experience
+
 Intuitive Navigation: Clear menu structure
 
 Responsive Layout: Works on all device sizes
@@ -194,6 +209,7 @@ Color contrast compliant
 Screen reader friendly
 
 🔧 Installation & Setup
+
 Local Development
 Clone the repository
 
@@ -209,6 +225,7 @@ LocalStorage support
 CSS Grid and Flexbox support
 
 📱 Pages Overview
+
 1. Homepage (index.html)
 Welcome section with call-to-action
 
@@ -254,6 +271,7 @@ Application status monitoring
 Application history
 
 🧠 Recommendation Algorithm
+
 How It Works
 Data Extraction: Parses user education and skills
 
@@ -290,6 +308,7 @@ No external API calls
 Demo data only (no real user information)
 
 📊 Performance Optimizations
+
 Frontend Optimizations
 Minimal DOM manipulation
 
@@ -309,6 +328,7 @@ Minimal re-renders
 Event debouncing
 
 🔮 Future Enhancements
+
 Planned Features
 Advanced Recommendation Engine
 
@@ -343,6 +363,7 @@ Push notifications
 Offline functionality
 
 🧪 Testing
+
 Manual Testing Performed
 Cross-browser compatibility
 
@@ -358,6 +379,7 @@ Test Accounts
 Use the provided demo accounts to test all features without registration.
 
 📝 Documentation
+
 Code Documentation
 Inline comments for complex functions
 
@@ -377,6 +399,7 @@ Step-by-step guides
 FAQ section (planned)
 
 🤝 Contributing
+
 Development Guidelines
 Follow existing code structure
 
@@ -401,6 +424,7 @@ Performance impact assessment
 This project is developed for educational purposes as part of a web development portfolio. All rights reserved by the development team.
 
 🙏 Acknowledgements
+
 Team collaboration and coordination
 
 Modern web development practices
